@@ -70,7 +70,7 @@ Helpers.getApiUrl = endpointRoute => {
     endpointRoute = endpointRoute.substr(1);
     couchUrl ="_couch/"; 
   }
-  return url.resolve(window.location.href, app.host + endpointRoute);
+  return url.resolve(window.location.href, app.host + couchUrl + endpointRoute);
 };
 
 Helpers.getServerUrl = endpointRoute => {
