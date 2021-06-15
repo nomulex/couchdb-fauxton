@@ -74,7 +74,7 @@ Helpers.getApiUrl = endpointRoute => {
 };
 
 Helpers.getServerUrl = endpointRoute => {
- 
+
   if (app.host.endsWith('/') && endpointRoute.startsWith("/")) {
     endpointRoute = endpointRoute.substr(1);
     couchUrl = "_couch/";
